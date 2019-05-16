@@ -1,0 +1,40 @@
+{
+  "name": "paging-algorithm",
+  "version": "1.0.0",
+  "description": "Pagination algorithm",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist/*",
+    "build": "tsc",
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "validate": "npm run build && CI=true npm run test"
+  },
+  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "typescript",
+    "pagination",
+    "paginate",
+    "paginator",
+    "pagination-algorithm",
+    "pagination-components"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidnguyen179/paging-algorithm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidnguyen179/paging-algorithm/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
